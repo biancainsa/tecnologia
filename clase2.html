@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 2 - Unidad III: Introducción al HTML</title>
+</head>
+
+<body bgcolor="#CFF5FF" text="#2795B0" link="#2795B0" vlink="#2795B0">
+    <center><a href="inicio7.html"> Volver al inicio</a></center>
+    <h1>Clase 2</h1>
+    <img src="gif.gif" align="left" border="1" hspace="50" vspace="50">
+    <h2>Unidad III - Introducción al HTML, primeros pasos – Formateo de textos</h2>
+
+    <h3>3.7 Introducción al HTML</h3>
+    <p>Para que dos personas se comuniquen es necesario que hablen el mismo idioma, esta nota es comprensible para los
+        que compartimos el idioma español. Lo mismo se puede decir sobre las computadoras e Internet, debido a que, la
+        Web no es más que la suma de computadoras que hablan el mismo idioma. Por tanto, para que dos o más PCs se
+        comuniquen es requisito indispensable que manejen el mismo lenguaje.</p>
+
+    <p>El lenguaje que "hablan" las páginas web se llama <strong>HTML</strong> (<em>HyperText Markup Language</em>) y
+        fue creado en 1992 por un físico nuclear llamado <strong>Tim Berners-Lee</strong>. Berners-Lee tomó dos
+        herramientas preexistentes: el concepto de <strong>hipertexto</strong> (que permite conectar documentos entre sí
+        a través de palabras que obran como puentes) y el <strong>SGML</strong> (siglas en inglés de lenguaje estándar
+        de marcación general), que sirve para poner etiquetas o marcas en un texto que indiquen qué es cada parte y cómo
+        debe verse.</p>
+
+    <p>El HTML (siglas en inglés de Lenguaje de Marcado de Hipertexto) no es exactamente un lenguaje, sino más bien es
+        un sistema muy simple de etiquetas (algo así como palabras claves) que contienen órdenes y se insertan en el
+        texto que uno quiere publicar. HTML tiene una serie de estilos comunes: encabezados, párrafos, listas y tablas,
+        así como también formatos de caracteres como negritas y ejemplos de código. Un documento HTML es un archivo de
+        texto: Parte de ese texto es lo que uno quiere comunicar; y el resto son las etiquetas HTML.</p>
+
+    <p>Algunas etiquetas sirven para decir <em>“esto es un encabezado”</em> o <em>“esto es una lista”</em>, describen la
+        estructura de la página y no dicen nada sobre el aspecto (su apariencia) que tendrá la página cuando se
+        visualice en el navegador. El trabajo del diseñador es decidir el tamaño del encabezado y el tipo de letra.</p>
+
+    <p>El aspecto de las páginas escritas en HTML varía según los sistemas y navegadores con los que se visualizan, sin
+        embargo, lo que sí seguirá estando allí dentro es la información real y los vínculos. Por tanto, la
+        recomendación para el diseñador es que cuando desarrolle su página, lo haga para que funcione en la mayoría de
+        los navegadores, y se concentre en un contenido claro y bien estructurado, que sea fácil de leer y entender.</p>
+
+    <h3>3.8 HTML es un lenguaje de marcado</h3>
+    <p>Escribir en un lenguaje de marcado significa que empieza con el texto de su página y que luego coloca “etiquetas”
+        en ciertas palabras y párrafos. Los archivos HTML contienen lo siguiente:</p>
+
+    <ul>
+        <li>El texto de la página en sí.</li>
+        <li>Las etiquetas HTML que indican los elementos de la página, la estructura, el formato y los vínculos de
+            hipertexto con otras páginas o con medios incluidos.</li>
+    </ul>
+
+    <p>HTML tiene un conjunto definido de etiquetas que se pueden usar. Para empezar a escribir HTML, lo único que
+        realmente necesita es algo para crear sus archivos HTML (un editor de textos) y un navegador para verlos. Cuando
+        va a guardar sus archivos deberán tener la extensión <code>.html</code>; por ejemplo:
+        <code>miarchivo.html</code>.</p>
+
+    <p>Para crear una buena página se tienen en cuenta dos aspectos:</p>
+    <ul>
+        <li>El conocimiento técnico para crear códigos HTML correctos.</li>
+        <li>El claro diseño para presentar la información.</li>
+    </ul>
+
+    <p><strong>Tipos de etiquetas o comandos:</strong></p>
+    <ul>
+        <li><strong>Abiertos:</strong> Los que no necesitan cierre. Ej: <code>&lt;BR&gt;</code></li>
+        <li><strong>Cerrados:</strong> Los que deben cerrarse. Ej: <code>&lt;HTML&gt; ....... &lt;/HTML&gt;</code></li>
+    </ul>
+
+    <p><strong>Estilos de etiquetas o comandos:</strong></p>
+    <ul>
+        <li><strong>Estilo físico:</strong> Son aquellos que producen un efecto visible en la página web.</li>
+        <li><strong>Estilo lógico:</strong> Son aquellos que no producen un efecto visible en la página web, solo se ven
+            cuándo se entra a mirar el código fuente de la página.</li>
+    </ul>
+
+    <h3>3.9 Estructura básica de una etiqueta</h3>
+    <p>La estructura de una etiqueta HTML es simple. La orden siempre va encerrada entre los signos mayor que
+        (<code>&lt;</code>) y menor que (<code>&gt;</code>). Por ejemplo: "Acá empieza el título del documento" se
+        escribe: <code>&lt;TITLE&gt;</code>…… (título del documento), y luego para indicar el fin del título utilizamos
+        la barra "/" en la etiqueta: <code>&lt;/TITLE&gt;</code>.</p>
+
+    <h3>3.10 Estructura básica de un documento HTML</h3>
+    <p>Todas las páginas web tienen la siguiente estructura esquelética:</p>
+    <img src="formato.jpg" align="left" border="1" hspace="50" vspace="50">
+
+    <p>Un documento HTML bien redactado tiene ocho etiquetas básicas que marcan las secciones principales del archivo:
+    </p>
+
+    <ul>
+        <li>
+            <strong>Inicio:</strong> La etiqueta <code>&lt;HTML&gt;</code> indica el inicio de un documento HTML.
+        </li>
+        <li>
+            <strong>Cabecera:</strong> La cabecera del documento es la sección comprendida entre
+            <code>&lt;HEAD&gt;</code> y <code>&lt;/HEAD&gt;</code>. En ella se debe encontrar, obligatoriamente, el
+            título (entre las etiquetas <code>&lt;TITLE&gt;</code> y <code>&lt;/TITLE&gt;</code>). El título de la
+            página debe describir su contenido, por ejemplo:
+            <code>&lt;TITLE&gt;Manuales y Tutoriales sobre programación&lt;/TITLE&gt;</code>, no por ejemplo
+            <code>&lt;TITLE&gt;Página de Inicio&lt;/TITLE&gt;</code>. Se deben usar títulos descriptivos relativos al
+            contenido de la página. <br>
+            <em>Atención:</em> este título aparecerá en la delgada barra superior de la ventana del browser, no dentro
+            de la pantalla. Además de la etiqueta <code>&lt;TITLE&gt;</code>, dentro de la sección de cabecera se suelen
+            incluir otras etiquetas, que más adelante se explicarán.
+        </li>
+        <li>
+            <strong>Cuerpo:</strong> El cuerpo está delimitado por las etiquetas <code>&lt;BODY&gt;</code> y
+            <code>&lt;/BODY&gt;</code>. El cuerpo contiene todo lo que el usuario observará en pantalla, desde la
+            ventana principal del navegador, es normalmente lo más importante del documento HTML. Es aquí donde debemos
+            colocar el contenido de nuestra página: texto, fotos, vídeos, etc. que uno quiere publicar, intercalado con
+            las etiquetas HTML necesarias para que se vea adecuadamente en pantalla.
+        </li>
+        <li>
+            <strong>Fin:</strong> La etiqueta <code>&lt;/HTML&gt;</code> indica la finalización del documento HTML.
+        </li>
+    </ul>
+
+    <blockquote>
+        <strong>Obs:</strong> un documento HTML consta de dos partes: HEAD y BODY. Siempre deben estar presentes.
+    </blockquote>
+
+    <h3>Requisitos para escribir una página web:</h3>
+    <ul>
+        <li>Un software de aplicación para editar el código fuente (Ej. Bloc de notas, VS Code).</li>
+        <li>Un navegador para visualizar la página web.</li>
+        <li>Grabar el documento con extensión (<code>.html</code> o <code>.htm</code>).</li>
+        <li>Los comandos pueden estar en minúsculas o mayúsculas.</li>
+        <li>HTML no reconoce errores de sintaxis, se debe prever el control de ortografía y de comandos al cargar cada
+            página.</li>
+        <li>No es necesario conectarse a Internet para el desarrollo local.</li>
+    </ul>
+</body>
+
+</html>

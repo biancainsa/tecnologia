@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Clase 4 - Unidad III: Caracteres Especiales y Atributos de Body</title>
+</head>
+
+<body bgcolor="#FFD4D4" text="#AB3F3F" link="#AB3F3F" vlink="#AB3F3F">
+    <center><a href="inicio7.html"> Volver al inicio</a></center>
+    <h1>Clase 4</h1>
+    <img src="puercoespin.jpeg" align="left" border="1" hspace="25" vspace="25" width="250" height="200">
+    <h2>Unidad III - Introducción al HTML, primeros pasos – Formateo de textos</h2>
+
+    <h3>3.12 Caracteres especiales</h3>
+    <p>Como ya se aprendió en las clases anteriores, los archivos HTML son de texto ASCII y no deben contener nada de
+        formato; los únicos caracteres que deben ir son los que se imprimen directamente del teclado. Los caracteres de
+        los archivos HTML deben pertenecer al conjunto estándar de caracteres ASCII (de 7 bits), y no pueden ser ninguno
+        de los caracteres del ASCII "extendido" (de 8 bits).</p>
+    <p>Para solucionar estos problemas, HTML define una serie especial de códigos, llamados <strong>entidades de
+            carácter</strong>, que pueden usarse para representar los caracteres que se quiera emplear.</p>
+
+    <h4>Entidades de carácter para caracteres especiales</h4>
+    <p>Las entidades de carácter pueden ser de dos formas: <strong>entidades nombradas</strong> y <strong>entidades
+            numeradas</strong>.</p>
+    <p>Las entidades nombradas empiezan con el signo ampersand (&) y terminan en punto y coma (;). En medio se encuentra
+        el nombre del carácter. Los nombres distinguen entre mayúsculas y minúsculas, así que tenga cuidado de
+        escribirlos exactamente.</p>
+    <p><em>Ejemplos:</em> &quot; ("), &laquo; («), &copy; (©).</p>
+
+    <p>Las entidades numeradas también empiezan con ampersand y terminan con punto y coma, pero en lugar de nombre
+        llevan el signo de número (#) y un número. Ese número corresponde al conjunto de ISO-Latin-1.</p>
+    <p><em>Ejemplos:</em> &#130; (‚), &#245; (õ).</p>
+
+    <p>En los archivos HTML, las entidades nombradas o numeradas se colocan en el lugar del carácter que representan.
+        Así, para poner la palabra <em>francés</em> en el archivo HTML, se escribirá: franc&eacute;s o bien franc&#233;s
+    </p>
+
+    <h4>Entidades de carácter para caracteres reservados</h4>
+    <p>Existen unos cuantos caracteres que tienen un significado especial en el propio HTML. Para estas excepciones
+        también se deben usar las entidades de carácter. Por ejemplo, si se quiere poner una línea de código como la
+        siguiente:</p>
+    <p>if x &lt; 0 do print i</p>
+    <p>El problema es con el signo menor que (&lt;) porque para HTML significa “el inicio de una etiqueta” y también con
+        el signo mayor que (&gt;) que significa “el final de la etiqueta”. La escritura correcta en HTML de la línea de
+        código anterior, sería como sigue:</p>
+    <p>&lt;p&gt;&lt;code&gt;if x &amp;lt; 0 do print i&lt;/code&gt;&lt;/p&gt;</p>
+
+    <h4>Lista de códigos o caracteres especiales comunes</h4>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Código HTML</th>
+                <th>Resultado</th>
+                <th>Código HTML</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&amp;aacute;</td>
+                <td>á</td>
+                <td>&amp;Aacute;</td>
+                <td>Á</td>
+            </tr>
+            <tr>
+                <td>&amp;eacute;</td>
+                <td>é</td>
+                <td>&amp;Eacute;</td>
+                <td>É</td>
+            </tr>
+            <tr>
+                <td>&amp;iacute;</td>
+                <td>í</td>
+                <td>&amp;Iacute;</td>
+                <td>Í</td>
+            </tr>
+            <tr>
+                <td>&amp;oacute;</td>
+                <td>ó</td>
+                <td>&amp;Oacute;</td>
+                <td>Ó</td>
+            </tr>
+            <tr>
+                <td>&amp;uacute;</td>
+                <td>ú</td>
+                <td>&amp;Uacute;</td>
+                <td>Ú</td>
+            </tr>
+            <tr>
+                <td>&amp;ntilde;</td>
+                <td>ñ</td>
+                <td>&amp;Ntilde;</td>
+                <td>Ñ</td>
+            </tr>
+            <tr>
+                <td>&amp;uuml;</td>
+                <td>ü</td>
+                <td>&amp;Uuml;</td>
+                <td>Ü</td>
+            </tr>
+            <tr>
+                <td>&amp;#191;</td>
+                <td>¿</td>
+                <td>&amp;#161;</td>
+                <td>¡</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>3.13 Formateo del &lt;BODY&gt; - Atributos</h3>
+    <p>En el “cuerpo” del documento &lt;BODY&gt;, va todo lo que queramos mostrar en nuestra página web. Esta etiqueta
+        tiene atributos con los que se pueden personalizar según el aspecto que se desee:</p>
+
+    <ul>
+        <li><strong>Bgcolor (Color de fondo):</strong> Define el color de fondo para nuestra página.<br>
+            Ejemplo por nombre: &lt;body bgcolor="red"&gt;&lt;/body&gt;<br>
+            Ejemplo por hexadecimal: &lt;body bgcolor="#FF0000"&gt;&lt;/body&gt;</li>
+        <li><strong>Text (Color de texto):</strong> Se usa para predefinir el color del texto de nuestra web.<br>
+            Ejemplo: &lt;body text="#000000"&gt;&lt;/body&gt;</li>
+        <li><strong>Link, alink y vlink (Color de enlaces):</strong> link para el enlace inactivo, alink para el enlace
+            activo (al hacer clic) y vlink para el enlace ya visitado.<br>
+            Ejemplo: &lt;body link="#FF0000" alink="#FF0000" vlink="#0000FF"&gt;&lt;/body&gt;</li>
+        <li><strong>Background (Imagen de fondo):</strong> Se usa para que tu página tenga una imagen de fondo. Si la
+            imagen no es suficientemente grande, se repetirá en mosaico.<br>
+            Ejemplo: &lt;body background="imagen.jpg"&gt;&lt;/body&gt;</li>
+        <li><strong>bgproperties="fixed" (Imagen de fondo fija):</strong> Se añade para indicar si la imagen de fondo es
+            fija y no se desplaza al mover el texto.<br>
+            Ejemplo: &lt;body background="back.gif" bgproperties="fixed"&gt;&lt;/body&gt;</li>
+        <li><strong>Márgenes (topmargin, bottommargin, leftmargin, rightmargin):</strong> Define los márgenes en
+            píxeles.<br>
+            Ejemplo: &lt;body leftmargin="10" topmargin="10" rightmargin="10" bottommargin="10"&gt;&lt;/body&gt;</li>
+    </ul>
+
+    <h3>3.14 Tamaño, color y tipos de fuentes</h3>
+    <p>La etiqueta &lt;FONT&gt; &lt;/FONT&gt; se usa para controlar las características de una cadena de caracteres
+        específica:</p>
+    <ul>
+        <li>Tipo de letra: &lt;font face="Times New Roman"&gt;fuente&lt;/font&gt;</li>
+        <li>Tamaño: &lt;font size="5"&gt;Este es el tamaño 5&lt;/font&gt;</li>
+        <li>Color: &lt;font color="#FF0000"&gt;texto rojo&lt;/font&gt;</li>
+    </ul>
+</body>
+
+</html>

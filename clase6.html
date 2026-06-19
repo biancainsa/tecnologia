@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 6 - Unidad V: Imágenes en HTML</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body bgcolor="#FCCCEA" text="#D91C92" link="#D91C92" vlink="#D91C92">
+    <center><a href="inicio7.html"> Volver al inicio</a></center>
+    <h1>Clase 6</h1>
+    <h1>¿Qué es el diseño web?</h1>
+    <img src="Video Game GIF by Fall Guys.gif" align="right" border="1" hspace="50" vspace="50" width="300" height="220">
+    <h2>Unidad V - Imágenes</h2>
+
+    <h3>5.1 Imágenes en la web – formatos de imágenes</h3>
+    <p>Poner imágenes en nuestra web produce unos resultados asombrosos de una manera muy fácil, ya que cada imagen
+        colocada en la web incrementará el tamaño (peso) de la página.</p>
+    <p>A la hora de insertar imágenes, los formatos más comúnmente aceptados son:</p>
+    <ul>
+        <li><strong>JPEG:</strong> Son imágenes digitales comprimidas con pérdida de información, pero que nos permiten
+            tener archivos que ocupen poco espacio.</li>
+        <li><strong>GIF:</strong> Es un formato para imágenes de mapas de bits que soportan 8 bits por píxel. Permite el
+            uso de animaciones.</li>
+        <li><strong>PNG:</strong> Es un formato de imagen en mapa de bits que emplea compresión de datos sin pérdida de
+            información. Fue creado específicamente para utilizar imágenes en Internet con un tamaño adecuado.</li>
+    </ul>
+
+    ---
+
+    <h3>5.2 Insertar una imagen: El comando o etiqueta <code>&lt;img&gt;</code></h3>
+    <p>Para insertar una imagen en HTML tenemos la etiqueta <code>&lt;img&gt;</code> (que proviene de la palabra
+        <em>image</em>).</p>
+    <p>Esta etiqueta es sencilla, por lo cual <strong>no necesita etiqueta de cierre</strong>. A continuación, se
+        describen los atributos de las imágenes:</p>
+
+    <h4>Atributo <code>src</code> (Lugar de la imagen)</h4>
+    <p>Este atributo es el que indica dónde se encuentra alojada la imagen que queremos mostrar.</p>
+    <ul>
+        <li>
+            <strong>Mismo directorio:</strong> Cuando la imagen está en la misma carpeta que el archivo HTML.<br>
+            <code>&lt;img src="foto.jpg"&gt;</code>
+        </li>
+        <li>
+            <strong>Otro directorio (Ruta de acceso):</strong> Cuando está dentro de otra carpeta del proyecto.<br>
+            <code>&lt;img src="/multimedia/imagenes/foto.jpg"&gt;</code>
+        </li>
+        <li>
+            <strong>Otro servidor (Código URL):</strong> Cuando la imagen se encuentra alojada en una web externa.<br>
+            <code>&lt;img src="http://lineadecodigo.com/imagenes/logo.jpg"&gt;</code>
+        </li>
+    </ul>
+
+    <h4>Atributo <code>align</code> (Alineación de la imagen)</h4>
+    <p>Sirve para alinear la imagen respecto al texto o la página. Utiliza los siguientes valores:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Valores</th>
+                <th>Descripción / Tipo de Alineación</th>
+                <th>Ejemplo de Sintaxis</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>"left"</code> o <code>"right"</code></td>
+                <td>Alineación horizontal (izquierda o derecha).</td>
+                <td><code>&lt;img src="foto.jpg" align="left"&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>"top"</code>, <code>"bottom"</code> o <code>"middle"</code></td>
+                <td>Alineación vertical (arriba, abajo o al medio/centro del texto).</td>
+                <td><code>&lt;img src="foto.jpg" align="middle"&gt;</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>Atributo <code>alt</code> (Texto alternativo de la imagen)</h4>
+    <p>Sirve para que los usuarios puedan leer una descripción de la imagen al mantener el puntero del ratón sobre ella,
+        o en caso de que el archivo no cargue:</p>
+    <p><code>&lt;img src="foto.jpg" alt="paisaje"&gt;</code></p>
+
+    <h4>Atributos <code>width</code> y <code>height</code> (Dimensiones de la imagen)</h4>
+    <p>Atributos opcionales pero muy recomendables; indican el ancho y la altura de la imagen. Se pueden especificar en
+        píxeles o en porcentajes:</p>
+    <ul>
+        <li><strong>En píxeles (con unidad):</strong>
+            <code>&lt;img src="foto.jpg" alt="paisaje" width="100px" height="100px"&gt;</code></li>
+        <li><strong>En píxeles (entero plano):</strong>
+            <code>&lt;img src="foto.jpg" alt="paisaje" width="100" height="100"&gt;</code></li>
+        <li><strong>En porcentaje:</strong>
+            <code>&lt;img src="foto.jpg" alt="paisaje" width="50%" height="50%"&gt;</code></li>
+    </ul>
+
+    <h4>Atributo <code>border</code> (Borde de la imagen)</h4>
+    <p>Permite adjudicar un borde perimetral a la imagen. Dependiendo del grosor que busques, puedes estructurarlo así:
+    </p>
+    <ul>
+        <li>
+            <strong>Por defecto (Valor 0):</strong> No muestra bordes.<br>
+            <code>&lt;p&gt;&lt;img src="foto.jpg" alt="paisaje"&gt; Por defecto&lt;/p&gt;</code>
+        </li>
+        <li>
+            <strong>Borde unitario (Atributo solo):</strong> Coloca un borde automático de 1 píxel.<br>
+            <code>&lt;p&gt;&lt;img src="calvin.gif" border&gt; Coloca un borde de un pixel a la imagen&lt;/p&gt;</code>
+        </li>
+        <li>
+            <strong>Borde personalizado:</strong> Define un grosor específico en píxeles.<br>
+            <code>&lt;p&gt;&lt;img src="foto.jpg" alt="paisaje" border="5"&gt; El borde es de 5px&lt;/p&gt;</code>
+        </li>
+    </ul>
+
+    <h4>Atributos <code>hspace</code> y <code>vspace</code> (Espaciados)</h4>
+    <ul>
+        <li><strong><code>hspace</code> (Espaciado horizontal):</strong> Indica la distancia que separa horizontalmente
+            la imagen del texto que la rodea (controla el espacio libre a la izquierda y derecha). Sus valores se
+            declaran en píxeles.</li>
+        <li><strong><code>vspace</code> (Espaciado vertical):</strong> Indica la distancia que separa verticalmente la
+            imagen del texto que la rodea (controla el espacio libre arriba y abajo). Sus valores se declaran en
+            píxeles.</li>
+    </ul>
+
+    <p><strong>Ejemplo combinado:</strong></p>
+    <p><code>&lt;img src="calvin.gif" align="left" border="1" hspace="50" vspace="50"&gt;</code></p>
+</body>
+
+</html>

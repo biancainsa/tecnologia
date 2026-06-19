@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 5 - Unidad IV: Listas en HTML</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body bgcolor="FCDDCC" text="#C4480A" link="#C4480A" vlink="#C4480A">
+    <center><a href="inicio7.html"> Volver al inicio</a></center>
+    <h1>Clase 5</h1>
+    <img src="capibara.gif" align="left" border="1" hspace="50" vspace="50" width="200" height="200">
+    <h2>Unidad IV - Listas</h2>
+
+    <h3>4.1 Listas</h3>
+    <p>Uno de los elementos más comunes en HTML son las listas. Se definen cinco clases de listas, pero las más usadas
+        son:</p>
+    <ul>
+        <li>Listas Ordenadas o Numeradas</li>
+        <li>Listas Desordenadas o con Viñetas</li>
+        <li>Listas de Glosario o Definición</li>
+    </ul>
+
+    <h4>Comandos o Etiquetas de Listas</h4>
+    <p>Todas las listas están encerradas por las etiquetas de apertura y cierre correspondiente a su tipo
+        (<code>&lt;ul&gt; &lt;/ul&gt;</code>, <code>&lt;ol&gt; &lt;/ol&gt;</code>, etc.); y cada elemento de la lista
+        tiene su propia etiqueta: <code>&lt;dt&gt;</code> y <code>&lt;dd&gt;</code> en listas de glosario de términos y
+        <code>&lt;li&gt;</code> en las demás.</p>
+    <p>Para escribir los códigos de listas, se sugiere tener un cierto orden: en una línea escribir los comandos de
+        listas, y cada elemento de las listas en otra línea y con una identación. De esta manera se podrá distinguir
+        fácilmente todas las listas y cada uno de sus elementos.</p>
+
+    ---
+
+    <h3>4.2 Listas Ordenadas o Numeradas</h3>
+    <p>Las listas ordenadas son listas donde cada elemento está numerado. Van encerradas en las etiquetas
+        <code>&lt;ol&gt; &lt;/ol&gt;</code>, y cada elemento de la lista empieza con la etiqueta
+        <code>&lt;li&gt;</code>, que va de un solo lado (no es obligatorio poner el cierre en estándares antiguos,
+        aunque sí recomendado).</p>
+
+    <p><strong>Ejemplo:</strong></p>
+    <pre><code>&lt;ol&gt;
+    &lt;li&gt; María
+    &lt;li&gt; Miguel
+    &lt;li&gt; Juan
+&lt;/ol&gt;</code></pre>
+
+    <p>Los atributos son partes adicionales de las etiquetas HTML, que contienen opciones u otra información acerca de
+        la etiqueta en sí.</p>
+
+    <h4>Atributos del comando <code>&lt;ol&gt;</code>:</h4>
+    <ul>
+        <li><strong><code>type</code>:</strong> Para elegir el tipo de numeración.</li>
+        <li><strong><code>start</code>:</strong> Inicio de numeración.</li>
+    </ul>
+
+    <h4>Tipos de numeración (valores para <code>type</code>):</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Valor</th>
+                <th>Descripción</th>
+                <th>Ejemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>"1"</code></td>
+                <td>Números ordinales (Predeterminada)</td>
+                <td>1, 2, 3, 4...</td>
+            </tr>
+            <tr>
+                <td><code>"I"</code></td>
+                <td>Números romanos en mayúsculas</td>
+                <td>I, II, III...</td>
+            </tr>
+            <tr>
+                <td><code>"i"</code></td>
+                <td>Números romanos en minúsculas</td>
+                <td>i, ii, iii...</td>
+            </tr>
+            <tr>
+                <td><code>"a"</code></td>
+                <td>Letras en minúsculas</td>
+                <td>a, b, c...</td>
+            </tr>
+            <tr>
+                <td><code>"A"</code></td>
+                <td>Letras en mayúsculas</td>
+                <td>A, B, C...</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><strong>Sintaxis:</strong></p>
+    <p><code>&lt;Etiqueta Atributo="valor"&gt; ...................... &lt;/Etiqueta&gt;</code></p>
+
+    <p><strong>Ejemplos:</strong></p>
+    <pre><code>&lt;ol type="I"&gt; 
+    &lt;li&gt; ................... 
+&lt;/ol&gt;</code></pre>
+    <pre><code>&lt;ol type="1" start="4"&gt; 
+    &lt;li&gt; ................... 
+&lt;/ol&gt;</code></pre>
+
+    ---
+
+    <h3>4.3 Listas Desordenadas o con Viñetas</h3>
+    <p>En las listas con viñetas los elementos están marcados con una viñeta; es decir, un símbolo tipográfico especial.
+        Estas listas se ven igual que las numeradas, excepto que las listas se indican con las etiquetas
+        <code>&lt;ul&gt; &lt;/ul&gt;</code>, y los elementos de la lista también se indican con la etiqueta
+        <code>&lt;li&gt;</code>.</p>
+
+    <p><strong>Ejemplo:</strong></p>
+    <pre><code>&lt;ul&gt;
+    &lt;li&gt; María
+    &lt;li&gt; Miguel
+    &lt;li&gt; Juan
+&lt;/ul&gt;</code></pre>
+
+    <h4>Atributos del comando <code>&lt;ul&gt;</code>:</h4>
+    <ul>
+        <li><strong><code>type</code>:</strong> Para elegir el tipo de viñetas.</li>
+    </ul>
+
+    <h4>Tipos de viñetas (valores para <code>type</code>):</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Valor</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>"disc"</code></td>
+                <td>Viñetas redondas rellenadas (Predeterminada).</td>
+            </tr>
+            <tr>
+                <td><code>"square"</code></td>
+                <td>Viñetas cuadradas.</td>
+            </tr>
+            <tr>
+                <td><code>"circle"</code></td>
+                <td>Viñetas circulares sin relleno.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><strong>Ejemplo:</strong></p>
+    <pre><code>&lt;ul type="square"&gt; 
+    &lt;li&gt; ................... 
+&lt;/ul&gt;</code></pre>
+
+    ---
+
+    <h3>4.4 Listas de Glosario o Definición</h3>
+    <p>En las listas de glosario, cada elemento tiene dos partes: el término y su definición. Por ello, en ocasiones a
+        estas listas se les llama también de definición. Estas dos partes tienen sus propias etiquetas:
+        <code>&lt;dt&gt;</code> para el término, y <code>&lt;dd&gt;</code> para su definición; van de un solo lado y se
+        usan en pares. Todas las listas de glosario están indicadas con las etiquetas
+        <code>&lt;dl&gt; &lt;/dl&gt;</code>.</p>
+
+    <p><strong>Ejemplo:</strong></p>
+    <pre><code>&lt;dl&gt;
+    &lt;dt&gt; HTML &lt;/dt&gt;
+    &lt;dd&gt; Lenguaje de marcado de hipertexto. &lt;/dd&gt;
+    &lt;dt&gt; WWW &lt;/dt&gt;
+    &lt;dd&gt; Es un sistema gráfico de información de hipertexto, distribuido, global, interactivo, dinámico e independiente de la plataforma, que funciona en Internet. &lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+
+    ---
+
+    <h3>4.5 Listas Anidadas</h3>
+    <p>El lenguaje HTML nos permite insertar una lista dentro de otra. Se pueden anidar listas de distinto tipo, por
+        ejemplo, podemos tener una lista desordenada y uno de los ítems puede ser una lista ordenada.</p>
+    <p>Para el anidamiento de listas solo debemos tener cuidado en la correcta apertura y cerrado de las mismas.</p>
+
+    <p><strong>Ejemplo:</strong></p>
+    <pre><code>&lt;ul&gt;
+    &lt;li&gt;Elemento 1&lt;/li>
+    &lt;li&gt;Elemento 2&lt;/li&gt;
+    &lt;ol&gt;
+        &lt;li&gt;Elemento 2.1&lt;/li&gt;
+        &lt;li&gt;Elemento 2.2&lt;/li&gt;
+        ...
+        &lt;li&gt;Elemento 2.N&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;li&gt;Elemento 3&lt;/li&gt;
+    ...
+    &lt;li&gt;Elemento N&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</body>
+
+</html>

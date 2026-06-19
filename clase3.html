@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 3 - Unidad III: Lista de Etiquetas y Atributos HTML</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body bgcolor="#E9FFE5" text="#3FAB4D" link="#3FAB4D" vlink="#3FAB4D">
+    <center><a href="inicio7.html"> Volver al inicio</a></center>
+    <h1>Clase 3</h1>
+    <img src="compubaila.gif" align="left" border="1" hspace="50" vspace="50" width="200" height="200">
+    <h2>Unidad III - Introducción al HTML, primeros pasos – Formateo de textos</h2>
+
+    <h3>3.11 Lista de Comandos o Etiquetas del lenguaje HTML</h3>
+
+    <h4>Comandos de Estilo Físico</h4>
+    <p>Estas etiquetas aplican un formato directo sobre el texto o la estructura visible de la página web:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Etiqueta de Apertura</th>
+                <th>Etiqueta de Cierre</th>
+                <th>Descripción / Función</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;html&gt;</code></td>
+                <td><code>&lt;/html&gt;</code></td>
+                <td>Inicio y fin de una página Web.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;head&gt;</code></td>
+                <td><code>&lt;/head&gt;</code></td>
+                <td>Encabezado del documento HTML.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;title&gt;</code></td>
+                <td><code>&lt;/title&gt;</code></td>
+                <td>Título del documento (se muestra en la barra del navegador).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;body&gt;</code></td>
+                <td><code>&lt;/body&gt;</code></td>
+                <td>Cuerpo del documento (contenido visible).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;p&gt;</code></td>
+                <td><code>&lt;/p&gt;</code></td>
+                <td>Párrafo. Por defecto alineado a la izquierda. Su cierre es opcional en estándares antiguos, pero
+                    recomendado.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;br&gt;</code></td>
+                <td><em>No requiere</em></td>
+                <td>Salto de línea forzoso (dentro de un párrafo).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;i&gt;</code></td>
+                <td><code>&lt;/i&gt;</code></td>
+                <td>Letras, palabras o párrafos en Cursivas o Itálicas.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;em&gt;</code></td>
+                <td><code>&lt;/em&gt;</code></td>
+                <td>Letras, palabras o párrafos enfatizados.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;b&gt;</code></td>
+                <td><code>&lt;/b&gt;</code></td>
+                <td>Letras o palabras en Negritas.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;u&gt;</code></td>
+                <td><code>&lt;/u&gt;</code></td>
+                <td>Letras o palabras subrayadas.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;s&gt;</code></td>
+                <td><code>&lt;/s&gt;</code></td>
+                <td>Letras o palabras tachadas.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;tt&gt;</code></td>
+                <td><code>&lt;/tt&gt;</code></td>
+                <td>Tipo de letra monoespaciada (estilo máquina de escribir). Desfasado en HTML5.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;strong&gt;</code></td>
+                <td><code>&lt;/strong&gt;</code></td>
+                <td>Letras, palabras o párrafos resaltados con importancia formal en Negritas.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;small&gt;</code></td>
+                <td><code>&lt;/small&gt;</code></td>
+                <td>Texto de tamaño menor al resto de los párrafos.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;big&gt;</code></td>
+                <td><code>&lt;/big&gt;</code></td>
+                <td>Texto de tamaño mayor al resto de los párrafos (Obsoleto en HTML5).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;sup&gt;</code></td>
+                <td><code>&lt;/sup&gt;</code></td>
+                <td>Superíndice.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;sub&gt;</code></td>
+                <td><code>&lt;/sub&gt;</code></td>
+                <td>Subíndice.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;address&gt;</code></td>
+                <td><code>&lt;/address&gt;</code></td>
+                <td>Para firmas de páginas con dirección física o de contacto del webmaster (que no sea un enlace
+                    directo de email).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;blink&gt;</code></td>
+                <td><code>&lt;/blink&gt;</code></td>
+                <td>Texto parpadeante (Obsoleto, no funcional en navegadores modernos).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;hn&gt;</code></td>
+                <td><code>&lt;/hn&gt;</code></td>
+                <td>
+                    Para realizar encabezados de página o sección. La <code>n</code> se reemplaza por valores de 1 a
+                    6:<br>
+                    <strong>1</strong> = Encabezado de tamaño mayor.<br>
+                    <strong>6</strong> = Encabezado de tamaño menor.<br>
+                    <em>Nota:</em> Se utiliza dentro del <code>&lt;body&gt;</code> para estructurar jerárquicamente el
+                    contenido.
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;hr&gt;</code></td>
+                <td><em>No requiere</em></td>
+                <td>Traza una raya horizontal que ocupa todo el ancho de la pantalla, usada para dividir contenidos.
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;center&gt;</code></td>
+                <td><code>&lt;/center&gt;</code></td>
+                <td>Para centrar elementos como imágenes, tablas o párrafos (Obsoleto en HTML5; hoy se usa CSS).</td>
+            </tr>
+            <tr>
+                <td><code>&amp;nbsp;</code></td>
+                <td><em>No requiere</em></td>
+                <td>Entidad o palabra reservada que sirve para colocar un espacio en blanco explícito entre caracteres.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>Comandos de Estilo Lógico</h4>
+    <p>Estas etiquetas definen el significado o la naturaleza del texto, más allá de cómo se rendericen visualmente:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Etiqueta de Apertura</th>
+                <th>Etiqueta de Cierre</th>
+                <th>Descripción / Función</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;!--</code></td>
+                <td><code>--&gt;</code></td>
+                <td>Para colocar comentarios internos en el código fuente (no visibles en la pantalla).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;var&gt;</code></td>
+                <td><code>&lt;/var&gt;</code></td>
+                <td>Para definir variables en contextos informáticos o matemáticos.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;samp&gt;</code></td>
+                <td><code>&lt;/samp&gt;</code></td>
+                <td>Muestra texto de salida de un programa o ejemplos de código.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;dfn&gt;</code></td>
+                <td><code>&lt;/dfn&gt;</code></td>
+                <td>Representa la definición de un término.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;cite&gt;</code></td>
+                <td><code>&lt;/cite&gt;</code></td>
+                <td>Para colocar referencias o citas breves (como el título de una obra o una frase célebre).</td>
+            </tr>
+            <tr>
+                <td><code>&lt;blockquote&gt;</code></td>
+                <td><code>&lt;/blockquote&gt;</code></td>
+                <td>Para colocar bloques de citas largas o extensas extraídas de otra fuente.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Atributos</h3>
+    <p>Son palabras especiales que acompañan a un comando dentro de su etiqueta de apertura para modificar, configurar o
+        mejorar su comportamiento o apariencia.</p>
+
+    <p><strong>Sintaxis general:</strong></p>
+    <p><code>&lt;comando atributo="valor"&gt; Contenido... &lt;/comando&gt;</code></p>
+
+    <h4>Atributos del comando <code>&lt;p&gt;</code>:</h4>
+    <ul>
+        <li>
+            <strong><code>align</code>:</strong> Sirve para la alineación del texto dentro del párrafo.<br>
+            Valores posibles:
+            <ul>
+                <li><code>"left"</code>: Alineación izquierda (predeterminado).</li>
+                <li><code>"right"</code>: Alineación derecha.</li>
+                <li><code>"center"</code>: Alineación centrada.</li>
+            </ul>
+            <em>Ejemplo:</em> <code>&lt;p align="center"&gt;Aquí se escribe el párrafo centrado&lt;/p&gt;</code>
+        </li>
+    </ul>
+
+    <h4>Atributos del comando <code>&lt;hr&gt;</code>:</h4>
+    <ul>
+        <li>
+            <strong><code>noshade</code>:</strong> Elimina el efecto de relieve 3D, mostrando una línea sólida y plana
+            (más oscura).<br>
+            <em>Ejemplo:</em> <code>&lt;hr noshade&gt;</code>
+        </li>
+        <li>
+            <strong><code>width</code>:</strong> Define el ancho horizontal de la línea en la pantalla.<br>
+            Valores posibles: un número entero (en píxeles) o un porcentaje (del tamaño real de la pantalla).<br>
+            <em>Ejemplos:</em> <code>&lt;hr width="50"&gt;</code> (50 píxeles) o <code>&lt;hr width="50%"&gt;</code> (la
+            mitad de la pantalla).
+        </li>
+        <li>
+            <strong><code>size</code>:</strong> Define la altura o el grosor vertical de la línea en la pantalla (en
+            píxeles).<br>
+            <em>Ejemplo:</em> <code>&lt;hr size="5"&gt;</code>
+        </li>
+        <li>
+            <strong><code>color</code>:</strong> Sirve para asignarle un color a la línea horizontal.<br>
+            Valores posibles: Nombre del color en inglés (<code>blue</code>, <code>pink</code>, <code>red</code>) o
+            código hexadecimal (<code>#RRGGBB</code> donde RR=rojo, GG=verde, BB=azul, usando dígitos del 0 al 9 y
+            letras de la A a la F).<br>
+            <em>Ejemplos:</em> <code>&lt;hr color="red"&gt;</code> o <code>&lt;hr color="#AA0000"&gt;</code> (Rojo
+            oscuro).
+        </li>
+        <li>
+            <strong><code>align</code>:</strong> Alinea la línea horizontal en la pantalla cuando su ancho (width) es
+            menor al 100%.<br>
+            Valores posibles: <code>"left"</code>, <code>"right"</code> o <code>"center"</code> (predeterminado).<br>
+            <em>Ejemplo:</em> <code>&lt;hr width="75%" align="left"&gt;</code>
+        </li>
+    </ul>
+</body>
+
+</html>
